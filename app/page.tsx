@@ -2,7 +2,7 @@
 
 
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
-import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
+//import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
@@ -11,7 +11,7 @@ import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/ui/box-reveal";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
-import NumberTicker from "@/components/ui/number-ticker";
+//import NumberTicker from "@/components/ui/number-ticker";
 import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
