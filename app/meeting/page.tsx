@@ -6,7 +6,7 @@ import ShowcaseNavbar from "@/components/showcase-navbar";
 import { PiCheckCircle } from "react-icons/pi";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ContactForm } from "./contact-form";
+
 import Calendly from "./calendly";
 
 
