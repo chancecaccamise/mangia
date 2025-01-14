@@ -2,7 +2,7 @@
 
 
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
-//import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
+
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
@@ -11,7 +11,7 @@ import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import BoxReveal from "@/components/ui/box-reveal";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
-//import NumberTicker from "@/components/ui/number-ticker";
+
 import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
@@ -76,12 +76,6 @@ export default function Home() {
 
         <div className="absolute right-1/2  translate-x-1/2 transform">
         <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-          {/* 
-          <Link href={'/showcase'}
-          className="hover:text-blue-500">
-            Showcase
-          </Link>
-          */}
           <ScrollLink 
           to='services'
           smooth={true}
@@ -104,13 +98,7 @@ export default function Home() {
 
     </div>
     <div className="flex items-center gap-x-4">
-      {/*
-      <a href="tel:7166381627" className="hidden lg:flex">
-        <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-          (716)-638-1627
-        </button>
-      </a>
-      */}
+      
       <Link href={'/meeting'}
       className="
       py-3 
@@ -131,7 +119,7 @@ export default function Home() {
       </Element>
       <main className="md:pb-10">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
-        {/*<AnimatedShinyTextDemo />*/}
+        
         
         <h1>
           <CoverDemo />
@@ -216,33 +204,7 @@ export default function Home() {
           
 
           <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
-             {/*
-            <div className="md:w-2/5">
-              <h1 className="text-2xl font-medium text-gray-600 w-4/5">
-                Trusted by fast growing brands worldwide
-              </h1>
-
-              <div className="flex my-6 gap-x-5 w-full">
-                <div>
-                  <h1 className="text-green-900 text-3xl md:text-5xl">
-                    <NumberTicker value={35} />  <p className="text-gray-500 text-sm md:text-md">Happy Clients</p>
-                  </h1>
-                </div>
-
-                <div className="w-px bg-gray-300 self-stretch"></div>
-
-               
-                <div className="flex-1 min-w-0">
-                  <h1 className="text-green-900 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={50} /> + <p className="text-gray-500 text-sm md:text-md">Projects Completed</p>
-                  </h1>
-                </div>
-                
-
-
-              </div>
-            </div>
-            */}
+             
             <section className="overflow-hidden mt-10 md:w4/5">
               <InfiniteMovingLogos
               speed ="slow"
@@ -350,7 +312,7 @@ export default function Home() {
         </main>
       </Element>
 
-      {/*Did not include testimonial section */}
+      
 
       <Element name="guarentees">
         <ShootingStarsAndStarsBackgroundDemo/>
@@ -378,11 +340,7 @@ export default function Home() {
 
         <div className="flex md:justify-center gap-x-4 mt-10">
           © 2025 Mangia DMA. All Rights Reserved.
-          {/*
-          <Link href="/" className="text-blue-500">
-            Privacy Policy
-          </Link>
-          */}
+          
         </div>
       </footer>
 
