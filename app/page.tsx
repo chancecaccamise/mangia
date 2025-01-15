@@ -347,6 +347,7 @@ export default function Home() {
           <p className="text-left  text-xl  text-gray-500">
             mangiadma@gmail.com
           </p>
+          
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
