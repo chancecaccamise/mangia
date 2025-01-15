@@ -52,13 +52,13 @@ xl:w-4/5
             Showcase
           </Link>
           */}
-             <Link href="/" className="hover:text-blue-500">
+             <Link href="/" className="hover:text-green-900">
             Services
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-green-900">
         Process
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-green-900">
             Guarentees
           </Link>
   
@@ -79,7 +79,7 @@ xl:w-4/5
       href={"/meeting"}
         className="py-3 px-6
       text-lg
-      hover:bg-[#abcbff] 
+      hover:bg-[#06402B] 
       rounded-[6px]
       border-2 
       border-black 

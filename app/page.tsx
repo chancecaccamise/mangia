@@ -79,19 +79,19 @@ export default function Home() {
           <ScrollLink 
           to='services'
           smooth={true}
-          className="hover:text-blue-500">
+          className="hover:text-green-900">
           Services            
           </ScrollLink>
           <ScrollLink 
           to='process'
           smooth={true}
-          className="hover:text-blue-500">
+          className="hover:text-green-900">
           Process            
           </ScrollLink>
           <ScrollLink 
           to='guarentees'
           smooth={true}
-          className="hover:text-blue-500">
+          className="hover:text-green-900">
           Guarentees            
           </ScrollLink>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
       py-3 
       px-6  
       text-lg
-      hover:bg-[#abcdff]
+      hover:bg-[#06402B]
       rounded-[6px]
       border-2
       border-black
@@ -142,7 +142,7 @@ export default function Home() {
             px-10
             md:px-16
       md:text-xl
-      hover:bg-[#abcbff] 
+      hover:bg-[#06402B] 
       rounded-[6px]
       border-2 
       border-black 
