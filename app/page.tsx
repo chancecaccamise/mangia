@@ -18,6 +18,15 @@ import { PiCheckBold } from "react-icons/pi";
 import {Link as ScrollLink, Element} from "react-scroll";
 
 
+const footerLinks = [
+  "Privacy Policy",
+  "Terms of Use",
+  "Sales Policy",
+  "Legal",
+  "Site Map",
+];
+
+
 const services = [
   {
     icon: "/images/s_6.png",
@@ -155,8 +164,10 @@ export default function Home() {
             >
               Book a Call
             </Link>
-            <Link
-              href={"/showcase"}
+            
+            <ScrollLink
+              to="services"
+              smooth={true}
               className="
               bg-white
    py-3 
@@ -168,8 +179,8 @@ export default function Home() {
         rounded-[6px]
         hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
             >
-              Showcase
-            </Link>
+              Services
+            </ScrollLink>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             <BoxReveal boxColor={"#154D38"} duration={0.5}>
@@ -332,10 +343,10 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">(716)-638-1627</p>
-          <p className="text-left  text-xl  text-gray-500">
+          
+          {/*<p className="text-left  text-xl  text-gray-500">
             mangiadma@gmail.com
-          </p>
+          </p>*/}
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
