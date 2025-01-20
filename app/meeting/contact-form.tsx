@@ -79,7 +79,7 @@ export function ExampleForm() {
                 value="website-design"
                 name="services"
               />
-              Website & Design
+              Web Design + Development
             </label>
 
             <label className="flex items-center gap-2 text-sm text-gray-700">
