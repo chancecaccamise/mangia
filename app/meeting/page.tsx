@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 
 import { ExampleForm } from "./contact-form"
+import Footer from "@/components/ui/footer";
 
 
 
@@ -86,7 +87,7 @@ const Meeting = () => {
     </div>
     
       </div>
-      
+      <Footer/>
     </div>
     
   );
