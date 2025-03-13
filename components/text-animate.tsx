@@ -110,7 +110,7 @@ const defaultItemAnimationVariants: Record<
         opacity: 1,
         y: 0,
         transition: {
-          delay,
+          
           duration: 0.3,
         },
       }),
