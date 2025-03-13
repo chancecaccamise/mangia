@@ -37,7 +37,7 @@ const LinkedInIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 // Define navigation links with explicit typing
 const navigation: NavigationItem[] = [
   { name: "Facebook", href: "#", icon: FacebookIcon },
-  { name: "Instagram", href: "https://www.instagram.com/mangia.dma/", icon: InstagramIcon },
+  { name: "Instagram", href: "https://www.instagram.com/mangiadma/", icon: InstagramIcon },
   { name: "LinkedIn", href: "https://www.linkedin.com/company/mangia-digital-marketing-agency/", icon: LinkedInIcon },
 ];
 
