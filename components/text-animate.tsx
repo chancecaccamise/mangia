@@ -106,14 +106,7 @@ const defaultItemAnimationVariants: Record<
     container: defaultContainerVariants,
     item: {
       hidden: { opacity: 0, y: 20 },
-      show: (number) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-          
-          duration: 0.3,
-        },
-      }),
+      
       exit: {
         opacity: 0,
         y: 20,
@@ -144,16 +137,7 @@ const defaultItemAnimationVariants: Record<
     container: defaultContainerVariants,
     item: {
       hidden: { opacity: 0, filter: "blur(10px)", y: 20 },
-      show: (number) => ({
-        opacity: 1,
-        filter: "blur(0px)",
-        y: 0,
-        transition: {
-          y: { duration: 0.3 },
-          opacity: { duration: 0.4 },
-          filter: { duration: 0.3 },
-        },
-      }),
+      
       exit: {
         opacity: 0,
         filter: "blur(10px)",
@@ -170,16 +154,7 @@ const defaultItemAnimationVariants: Record<
     container: defaultContainerVariants,
     item: {
       hidden: { opacity: 0, filter: "blur(10px)", y: -20 },
-      show: (number) => ({
-        opacity: 1,
-        filter: "blur(0px)",
-        y: 0,
-        transition: {
-          y: { duration: 0.3 },
-          opacity: { duration: 0.4 },
-          filter: { duration: 0.3 },
-        },
-      }),
+      
     },
   },
   slideUp: {
