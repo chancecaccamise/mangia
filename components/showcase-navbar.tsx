@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { ScrollLink } from "react-scroll";
+
 
 const ShowcaseNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
