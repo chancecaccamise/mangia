@@ -227,7 +227,7 @@ export default function Home() {
                   name:"Blue Reef Buffalo",
                 },
                 {
-                  logo:"/logo/voelkerlogo.webp",
+                  logo:"/logo/voelkerLogo.webp",
                   name:"Voelker Construction and Repair",
                 },
                 
