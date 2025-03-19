@@ -11,12 +11,10 @@ const works = [
   },
   {
     background: "bg-gray-200",
-    imageUrl: "/images/716cannabis website.png",
-    title: "716 Cannabis",
-    link: "https://716cannabisllc.com/",
+    imageUrl: "/images/voelkerconstruction website.png",
+    title: "Voelker Construction and Repairs",
+    link: "https://www.voelkerconstruction716.com/",
   },
-  
-
 
 ];
 

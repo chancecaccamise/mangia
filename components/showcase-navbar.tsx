@@ -1,99 +1,106 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { ScrollLink } from "react-scroll";
 
 const ShowcaseNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div
-      className="
-      overflow-hidden
-      p-10
-      
+    <nav className="bg-white p-5 shadow-md md:mx-auto xl:w-4/5 2xl:w-[68%] my-5 rounded-lg">
+      <div className="flex justify-between items-center mx-6 md:px-8">
+        {/* Logo */}
+        <Link href="/">
+          <Image
+            src="/logo/logo.webp"
+            alt="Bird Logo"
+            width={1000}
+            height={1000}
+            className="w-28"
+          />
+        </Link>
 
-    rounded-[6px]
-    top-5
-    sticky
-    md:mx-auto
-
-    transform 
-    z-50
-xl:w-4/5 
-2xl:w-[68%]
-
-   
-    bg-white 
-    flex 
-    items-center
-    justify-between py-6
-    px-4
-    md:px-8
-    mx-6
-    
-    "
-    >
-      <Link href="/">
-      <Image
-        src="/logo/logo.webp"
-        alt="Bird Logo"
-        width={1000}
-        height={1000}
-        className="w-28"
-      />
-      </Link>
-
-      <div className="absolute right-1/2 translate-x-1/2 transform">
-        <div className="hidden md:flex gap-x-10 2xl:gap-x-10 items-center text-gray-700 font-medium text-lg ">
-          
-          <Link
-            href="/showcase"
-            className="
-          hover:text-green-900
-          "
-          >
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-x-10 text-gray-700 font-medium text-lg">
+          <Link href="/showcase" className="hover:text-green-900">
             Showcase
           </Link>
-          
-             <Link href="/" className="hover:text-green-900">
+          <Link href="/" className="hover:text-green-900">
             Services
           </Link>
           <Link href="/" className="hover:text-green-900">
-        Process
+            Process
           </Link>
           <Link href="/" className="hover:text-green-900">
-            Guarentees
+            Guarantees
           </Link>
-  
         </div>
+
+        {/* Book a Call Button (Desktop) */}
+        <div className="hidden md:flex">
+          <Link
+            href="/meeting"
+            className="py-3 px-6 text-lg hover:bg-[#06402B] rounded-[6px] border-2 
+            border-black dark:border-white bg-[#121212] text-white transition duration-200 
+            hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+          >
+            Book a call
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-gray-700"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={32} /> : <Menu size={32} />}
+        </button>
       </div>
 
-
-      <div className="flex items-center gap-x-4">
-      {/*<a href="tel:5193191562" className="hidden xl:flex">
-              <button className="px-4 py-2  rounded-md flex items-center gap-x-3 ">
-            (519)-319-1562
-              </button>
-            </a>
-            */}
-
-
-      <Link
-      href={"/meeting"}
-        className="py-3 px-6
-      text-lg
-      hover:bg-[#06402B] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-           bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-      >
-        Book a call
-      </Link>
-      </div>
-    </div>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col items-center bg-white shadow-md mt-4 rounded-lg">
+          <Link
+            href="/showcase"
+            className="py-4 w-full text-center border-b text-gray-700 hover:bg-gray-100"
+            onClick={() => setIsOpen(false)}
+          >
+            Showcase
+          </Link>
+          <Link
+            href="/"
+            className="py-4 w-full text-center border-b text-gray-700 hover:bg-gray-100"
+            onClick={() => setIsOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            href="/"
+            className="py-4 w-full text-center border-b text-gray-700 hover:bg-gray-100"
+            onClick={() => setIsOpen(false)}
+          >
+            Process
+          </Link>
+          <Link
+            href="/"
+            className="py-4 w-full text-center border-b text-gray-700 hover:bg-gray-100"
+            onClick={() => setIsOpen(false)}
+          >
+            Guarantees
+          </Link>
+          <Link
+            href="/meeting"
+            className="py-4 w-full text-center bg-[#121212] text-white hover:bg-[#06402B]"
+            onClick={() => setIsOpen(false)}
+          >
+            Book a call
+          </Link>
+        </div>
+      )}
+    </nav>
   );
 };
 
